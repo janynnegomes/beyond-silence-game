@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 240" role="img" aria-labelledby="title">
+  <title id="title">Lucas, sentado na quadra</title>
+  <defs>
+    <linearGradient id="hoodie" x2="0" y2="1"><stop stop-color="#398cdb"/><stop offset=".58" stop-color="#2467ba"/><stop offset="1" stop-color="#194b94"/></linearGradient>
+    <linearGradient id="hair" x2=".2" y2="1"><stop stop-color="#865044"/><stop offset="1" stop-color="#4f302e"/></linearGradient>
+    <linearGradient id="skin" x2="0" y2="1"><stop stop-color="#ffd0aa"/><stop offset="1" stop-color="#e99b7d"/></linearGradient>
+  </defs>
+  <ellipse cx="90" cy="230" rx="57" ry="7" fill="#20523a" opacity=".16"/>
+  <!-- Relaxed seated pose, with the same rounded shapes and bright shading as the player avatar -->
+  <path d="M65 158c10-5 19-5 27 1l-5 38c-1 9-7 15-15 14l-8-2c-7-2-10-8-8-15l5-27z" fill="#315b91"/>
+  <path d="M115 158c-10-5-19-5-27 1l5 38c1 9 7 15 15 14l8-2c7-2 10-8 8-15l-5-27z" fill="#284e83"/>
+  <path d="M62 203c8 4 17 5 26 1l3 13c-8 8-21 10-31 5-6-3-5-11 2-19zM118 203c-8 4-17 5-26 1l-3 13c8 8 21 10 31 5 6-3 5-11-2-19z" fill="#2875bd"/>
+  <path d="M63 207c8 4 15 4 24 1l2 11c-6 9-22 13-39 9-7-2-8-9-3-14 4-4 10-6 16-7zM117 207c-8 4-15 4-24 1l-2 11c6 9 22 13 39 9 7-2 8-9 3-14-4-4-10-6-16-7z" fill="#2588d0"/>
+  <path d="M49 227c11 4 27 3 39-3M131 227c-11 4-27 3-39-3" fill="none" stroke="#f2f8ff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M52 97c10-8 23-13 38-13s28 5 38 13l21 29-12 30 5 20c-29 15-75 15-104 0l5-20-12-30z" fill="url(#hoodie)"/>
+  <path d="M58 91c5-10 12-16 20-20l7 11-10 21zM122 91c-5-10-12-16-20-20l-7 11 10 21z" fill="#1f5caa"/>
+  <path d="M56 101c-12 7-17 18-19 31l-2 12c-1 9 5 14 12 12l13-10 17-27zM124 101c12 7 17 18 19 31l2 12c1 9-5 14-12 12l-13-10-17-27z" fill="#2f78c6"/>
+  <path d="M40 143c6 3 12 4 19 1l7 10c-6 6-15 8-23 4zM140 143c-6 3-12 4-19 1l-7 10c6 6 15 8 23 4z" fill="#1f5caa"/>
+  <path d="M48 149c7-4 13-1 19 4l13 10c5 4 3 10-2 10-6 0-12-5-20-8-8-2-13-5-14-9-1-3 0-5 4-7zM132 149c-7-4-13-1-19 4l-13 10c-5 4-3 10 2 10 6 0 12-5 20-8 8-2 13-5 14-9 1-3 0-5-4-7z" fill="url(#skin)"/>
+  <path d="M56 155c8 5 13 6 20 10M124 155c-8 5-13 6-20 10" fill="none" stroke="#d8876f" stroke-width="2" stroke-linecap="round"/>
+  <path d="M71 90c3 16 10 24 19 24s16-8 19-24l-6-12H77z" fill="#e99b7d"/>
+  <path d="M51 42c0-25 16-39 39-39s39 14 39 39v31c0 26-17 42-39 42S51 99 51 73z" fill="url(#skin)"/>
+  <ellipse cx="49" cy="67" rx="8" ry="13" fill="#e99b7d"/><ellipse cx="131" cy="67" rx="8" ry="13" fill="#e99b7d"/>
+  <path d="M48 57c-4-24 10-47 34-51 23-4 43 8 49 29 3 11 0 22-4 29-6-13-15-20-29-22-18-3-33 2-50 15z" fill="url(#hair)"/>
+  <path d="M55 34c12-24 32-29 50-20-12-1-21 5-26 12 18 2 33-4 46-17 6 22-3 39-21 46-18 7-37 2-49-6z" fill="#9b6554"/>
+  <path d="M59 52c7-8 14-9 22-4M101 48c8-5 15-4 21 3" fill="none" stroke="#593634" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="74" cy="65" rx="8.5" ry="9.5" fill="#fff"/><ellipse cx="108" cy="65" rx="8.5" ry="9.5" fill="#fff"/>
+  <ellipse cx="76" cy="67" rx="4.2" ry="5.8" fill="#37578e"/><ellipse cx="106" cy="67" rx="4.2" ry="5.8" fill="#37578e"/>
+  <circle cx="77.5" cy="64.5" r="1.8" fill="#fff"/><circle cx="107.5" cy="64.5" r="1.8" fill="#fff"/>
+  <path d="M66 62q8-6 16 0l1 4q-8-4-17 1zM100 62q8-6 16 0l1 4q-8-4-17 1z" fill="#f5b18f"/>
+  <ellipse cx="60" cy="80" rx="8" ry="4" fill="#ef8984" opacity=".25"/><ellipse cx="120" cy="80" rx="8" ry="4" fill="#ef8984" opacity=".25"/>
+  <path d="M79 92q11-9 22 0" fill="none" stroke="#a84d58" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M73 102c10 8 24 8 34 0l8 15c-16 11-34 11-50 0z" fill="#4a9ce1"/>
+</svg>

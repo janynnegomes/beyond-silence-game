@@ -1,0 +1,63 @@
+{
+  "frameWidth": 256,
+  "frameHeight": 320,
+  "columns": 4,
+  "rows": 2,
+  "origin": [
+    0.5,
+    0.95
+  ],
+  "frames": [
+    "parado",
+    "piscando",
+    "passo-esquerdo",
+    "passo-direito",
+    "pulo",
+    "fala",
+    "gesto",
+    "comemorando"
+  ],
+  "assets": [
+    "art.js",
+    "background-acolhimento.webp",
+    "background-biblioteca.webp",
+    "background-corredor.webp",
+    "background-jardim.webp",
+    "background-quadra.webp",
+    "background-refeitorio.webp",
+    "character-bia.png",
+    "character-lucas.png",
+    "character-player.png",
+    "character-teacher.png",
+    "frames.json",
+    "portrait-bia.png",
+    "portrait-lucas.png",
+    "portrait-player.png",
+    "portrait-teacher.png",
+    "seated-bia.png",
+    "seated-lucas.png",
+    "story-lucas.png",
+    "style.css"
+  ],
+  "speechSprites": {
+    "frameWidth": 256,
+    "frameHeight": 320,
+    "columns": 2,
+    "rows": 1,
+    "frames": [
+      "boca fechada",
+      "falando"
+    ],
+    "poses": [
+      "lucas-seated",
+      "lucas-standing",
+      "bia-seated",
+      "teacher-standing"
+    ],
+    "moods": [
+      "sad",
+      "shy",
+      "happy"
+    ]
+  }
+}

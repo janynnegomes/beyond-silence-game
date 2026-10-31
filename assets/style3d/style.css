@@ -1,0 +1,46 @@
+/* A coherent illustrated finish for the existing interface and story scenes. */
+#game,#game canvas{image-rendering:auto;background:#d6dfcf}
+#startScreen{background:linear-gradient(180deg,#153f5140,#112d42d9),url('background-quadra.webp') center/cover no-repeat}
+.journey-screen{background:linear-gradient(145deg,#fffbf3f2,#f6f0e4ee)!important;border-radius:28px!important;box-shadow:0 24px 80px #17344355!important;border:1px solid #fff!important}
+.journey-track{background:linear-gradient(#ffffff55,#ffffffbb),url('background-jardim.webp') center/cover!important;border-radius:22px!important}
+.journey-decor,.journey-school{display:none!important}
+.journey-terrain{opacity:.65}
+.journey-node{border-radius:50%!important;box-shadow:0 4px 12px #233f4440!important}
+.journey-stop-copy{border-radius:14px!important;background:#fff9efef!important;border:1px solid #e5d8c4!important}
+.journey-progress-box,.primary,.secondary,.modal-card,.choice{border-radius:18px!important}
+.primary{background:linear-gradient(135deg,#c6eea4,#a6d77c)!important;box-shadow:0 4px 12px #3866462b!important;border:1px solid #eefbdd!important}
+.modal-card{background:#fffaf1!important;box-shadow:0 20px 70px #183b4a44!important}
+.player-avatar{object-fit:cover!important;object-position:center 15%;background:#d3e7ec!important;border-radius:50%!important}
+.story-visual{background:url('background-quadra.webp') center/cover!important;image-rendering:auto!important}
+.hall-story{background-image:url('background-corredor.webp')!important}
+.support-story{background-image:url('background-acolhimento.webp')!important}
+.garden-story{background-image:url('background-jardim.webp')!important}
+.cafeteria-story{background-image:url('background-refeitorio.webp')!important}
+.library-story{background-image:url('background-biblioteca.webp')!important}
+.story-visual:before,.story-visual:after,.story-sun,.story-ball,.story-bench{display:none!important}
+.story-lucas{height:168px!important;width:125px!important;bottom:0!important;object-fit:contain!important}
+.art-loading,#artError{position:absolute;z-index:10;left:50%;top:50%;transform:translate(-50%,-50%);padding:16px 22px;border-radius:16px;background:#fffaf2f5;color:#284a54;text-align:center;box-shadow:0 6px 24px #17344333}
+#artError{top:110px;z-index:20;font-size:13px}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+.story-visual > div:not(.story-scene-label){display:none!important}
+
+.journey-screen:before,.journey-screen:after{display:none!important}
+.journey-top,.journey-bottom{background:linear-gradient(120deg,#284f5f,#376977)!important;border-color:#fff5!important;box-shadow:none!important}
+.journey-title{text-shadow:none!important;font-weight:800!important}
+.journey-title,.journey-kicker{color:#fffaf0!important}
+.journey-track{background:linear-gradient(#ffffff0d,#ffffff26),url('background-jardim.webp') center/cover!important}
+.journey-river,.journey-river-light{display:none!important}
+.journey-road{stroke:#f5deae!important}
+.journey-road-shadow{stroke:#6f735f!important;opacity:.55}
+.journey-stop-copy strong{color:#284956!important;font-size:clamp(9px,1.6vh,14px)!important}
+.journey-stop-copy small{color:#52645e!important}
+.journey-stop-copy em,.journey-stop-copy:after{color:#44713a!important}
+.journey-stop.is-current .journey-stop-copy{background:#fffff2!important;border-color:#8caf69!important}
+.journey-stop.is-current .journey-node{border-color:#a2b974!important;color:#2c4b53!important;box-shadow:0 3px 12px #334b4744!important}
+.journey-progress-box{background:#153c4c80!important;border:1px solid #ffffff55!important}
+.journey-note{border-radius:12px!important;background:#294f5bcc!important}
+#objective,.brand{font-family:system-ui,sans-serif!important}
+#objective{border:1px solid #fff!important;border-radius:14px!important;box-shadow:0 4px 16px #233e4930!important}
+.iconbtn{border-radius:16px!important;border:1px solid #fff!important;box-shadow:0 3px 12px #233e492a!important}
+.player-avatar{image-rendering:auto!important}

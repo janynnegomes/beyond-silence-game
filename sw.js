@@ -1,0 +1,109 @@
+const CACHE_NAME = "alem-do-silencio-dd2414b4a2b13e0f";
+const APP_SHELL = [
+  "./",
+  "./index.html",
+  "./bundle.js",
+  "./manifest.webmanifest",
+  "./assets/avatar-jogador.svg",
+  "./assets/icons/apple-touch-icon.png",
+  "./assets/icons/icon-192.png",
+  "./assets/icons/icon-512.png",
+  "./assets/lucas.svg",
+  "./assets/style3d/background-acolhimento.webp",
+  "./assets/style3d/background-biblioteca.webp",
+  "./assets/style3d/background-corredor.webp",
+  "./assets/style3d/background-jardim.webp",
+  "./assets/style3d/background-quadra.webp",
+  "./assets/style3d/background-refeitorio.webp",
+  "./assets/style3d/character-bia.png",
+  "./assets/style3d/character-lucas.png",
+  "./assets/style3d/character-player.png",
+  "./assets/style3d/character-teacher.png",
+  "./assets/style3d/emotion-bia-seated-happy.png",
+  "./assets/style3d/emotion-bia-seated-sad.png",
+  "./assets/style3d/emotion-bia-seated-shy.png",
+  "./assets/style3d/emotion-lucas-seated-happy.png",
+  "./assets/style3d/emotion-lucas-seated-sad.png",
+  "./assets/style3d/emotion-lucas-seated-shy.png",
+  "./assets/style3d/emotion-lucas-standing-happy.png",
+  "./assets/style3d/emotion-lucas-standing-sad.png",
+  "./assets/style3d/emotion-lucas-standing-shy.png",
+  "./assets/style3d/emotion-teacher-standing-happy.png",
+  "./assets/style3d/emotion-teacher-standing-sad.png",
+  "./assets/style3d/emotion-teacher-standing-shy.png",
+  "./assets/style3d/frames.json",
+  "./assets/style3d/obstacle-backpack.png",
+  "./assets/style3d/obstacle-ball.png",
+  "./assets/style3d/obstacle-basket.png",
+  "./assets/style3d/obstacle-bench.png",
+  "./assets/style3d/obstacle-books.png",
+  "./assets/style3d/obstacle-cone.png",
+  "./assets/style3d/obstacle-cushion.png",
+  "./assets/style3d/obstacle-footstool.png",
+  "./assets/style3d/obstacle-log.png",
+  "./assets/style3d/obstacle-mat.png",
+  "./assets/style3d/obstacle-planter.png",
+  "./assets/style3d/obstacle-pouf.png",
+  "./assets/style3d/obstacle-recyclebin.png",
+  "./assets/style3d/obstacle-returnsbox.png",
+  "./assets/style3d/obstacle-rock.png",
+  "./assets/style3d/obstacle-supplybox.png",
+  "./assets/style3d/obstacle-traycart.png",
+  "./assets/style3d/obstacle-wetfloor.png",
+  "./assets/style3d/portrait-bia.png",
+  "./assets/style3d/portrait-lucas.png",
+  "./assets/style3d/portrait-player.png",
+  "./assets/style3d/portrait-teacher.png",
+  "./assets/style3d/seated-bia.png",
+  "./assets/style3d/seated-lucas.png",
+  "./assets/style3d/speech-bia-seated-happy.png",
+  "./assets/style3d/speech-bia-seated-sad.png",
+  "./assets/style3d/speech-bia-seated-shy.png",
+  "./assets/style3d/speech-lucas-seated-happy.png",
+  "./assets/style3d/speech-lucas-seated-sad.png",
+  "./assets/style3d/speech-lucas-seated-shy.png",
+  "./assets/style3d/speech-lucas-standing-happy.png",
+  "./assets/style3d/speech-lucas-standing-sad.png",
+  "./assets/style3d/speech-lucas-standing-shy.png",
+  "./assets/style3d/speech-teacher-standing-happy.png",
+  "./assets/style3d/speech-teacher-standing-sad.png",
+  "./assets/style3d/speech-teacher-standing-shy.png",
+  "./assets/style3d/story-lucas.png",
+  "./assets/style3d/style.css"
+];
+
+self.addEventListener("install", event => {
+  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_SHELL)).then(() => self.skipWaiting()));
+});
+
+self.addEventListener("activate", event => {
+  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key)))).then(() => self.clients.claim()));
+});
+
+self.addEventListener("fetch", event => {
+  const request = event.request;
+  if (request.method !== "GET") return;
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin) return;
+  // HTML and scripts must refresh online; cached copies remain available offline.
+  if (request.mode === "navigate" || url.pathname.endsWith(".html") || url.pathname.endsWith(".js") || url.pathname.endsWith(".css")) {
+    event.respondWith(fetch(request, { cache: "no-cache" }).then(async response => {
+      if (response.ok) {
+        const cache = await caches.open(CACHE_NAME);
+        await cache.put(request, response.clone());
+      }
+      return response;
+    }).catch(async () => (await caches.match(request)) || (request.mode === "navigate" ? caches.match("./index.html") : Response.error())));
+    return;
+  }
+  event.respondWith(caches.match(request).then(cached => {
+    if (cached) return cached;
+    return fetch(request).then(response => {
+      if (response.ok && response.type === "basic") {
+        const copy = response.clone();
+        caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
+      }
+      return response;
+    }).catch(() => request.mode === "navigate" ? caches.match("./index.html") : Response.error());
+  }));
+});

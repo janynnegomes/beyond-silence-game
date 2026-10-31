@@ -1,0 +1,18 @@
+{
+  "id": "./index.html",
+  "name": "Além do Silêncio",
+  "short_name": "Além do Silêncio",
+  "description": "Um jogo educativo sobre empatia, escuta e apoio.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "landscape",
+  "theme_color": "#eda1a8",
+  "background_color": "#eda1a8",
+  "icons": [
+    { "src": "./assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
