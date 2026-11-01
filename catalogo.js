@@ -31,21 +31,16 @@ const previous = document.querySelector('[data-prev]');
 const next = document.querySelector('[data-next]');
 function renderCard() {
   const item = examples[current];
-  windowElement.innerHTML = `<div class="discovery-card"><button type="button" class="discovery-card-button" aria-expanded="false" aria-label="${item.title}: mostrar lição"><span class="discovery-card-flip"><span class="discovery-face discovery-front"><span class="discovery-number">${current + 1}</span><span class="discovery-illustration icon-${current}" aria-hidden="true"></span><span class="discovery-card-name">${item.title}</span></span><span class="discovery-face discovery-back" aria-hidden="true"><span class="discovery-number">${current + 1}</span><span class="discovery-lesson">${item.lesson}</span></span></span></button></div>`;
+  const card = document.createElement('ads-discovery-card');
+  card.setAttribute('card-title', item.title);
+  card.setAttribute('lesson', item.lesson);
+  card.setAttribute('number', String(current + 1));
+  card.setAttribute('illustration-index', String(current));
+  windowElement.replaceChildren(card);
   previous.disabled = current === 0;
   next.disabled = current === examples.length - 1;
   document.querySelector('.card-status').textContent = `Carta ${current + 1} de ${examples.length}`;
 }
-windowElement.addEventListener('click', event => {
-  const button = event.target.closest('.discovery-card-button');
-  if (!button) return;
-  const flipped = button.getAttribute('aria-expanded') !== 'true';
-  button.setAttribute('aria-expanded', String(flipped));
-  button.closest('.discovery-card').classList.toggle('is-flipped', flipped);
-  button.querySelector('.discovery-front').setAttribute('aria-hidden', String(flipped));
-  button.querySelector('.discovery-back').setAttribute('aria-hidden', String(!flipped));
-  button.setAttribute('aria-label', flipped ? `${examples[current].title}: ${examples[current].lesson}. Toque para voltar` : `${examples[current].title}: mostrar lição`);
-});
 previous.addEventListener('click', () => { if (current > 0) { current--; renderCard(); } });
 next.addEventListener('click', () => { if (current < examples.length - 1) { current++; renderCard(); } });
 renderCard();

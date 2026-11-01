@@ -1,8 +1,9 @@
-const CACHE_NAME = "alem-do-silencio-c3bf707fa7f43182";
+const CACHE_NAME = "alem-do-silencio-4de1994c68164d33";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./bundle.js",
+  "./components.js",
   "./manifest.webmanifest",
   "./assets/avatar-jogador.svg",
   "./assets/icons/apple-touch-icon.png",
@@ -27,6 +28,7 @@ const APP_SHELL = [
   "./assets/style3d/character-lucas.png",
   "./assets/style3d/character-player.png",
   "./assets/style3d/character-teacher.png",
+  "./assets/style3d/components.css",
   "./assets/style3d/design-tokens.css",
   "./assets/style3d/emotion-bia-seated-happy.png",
   "./assets/style3d/emotion-bia-seated-sad.png",

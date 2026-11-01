@@ -1,0 +1,6 @@
+/* Efeito visual compartilhado pela marca na abertura e na jornada. */
+ads-panel-heading,ads-journey-panel,ads-action-button,ads-story-choice{display:contents}
+ads-discovery-card{display:block}ads-discovery-card[hidden]{display:none!important}
+.ui-logo-float{animation:ui-logo-float 4s ease-in-out infinite}
+@keyframes ui-logo-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@media(prefers-reduced-motion:reduce){.ui-logo-float{animation:none}}
