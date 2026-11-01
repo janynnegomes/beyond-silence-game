@@ -1,0 +1,16 @@
+/* Valores extraídos das regras existentes. Não são uma escala universal. */
+:root {
+  --ds-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ds-blue-deep: #084374;
+  --ds-blue-panel-top: #51b6ed;
+  --ds-blue-panel-bottom: #1686c4;
+  --ds-blue-panel-border: #73d6ff;
+  --ds-surface-top: #d6f2ff;
+  --ds-surface-bottom: #b9e1f6;
+  --ds-ink: #113c62;
+  --ds-gold: #ffd04a;
+  --ds-panel-radius: 18px;
+  --ds-panel-shadow: inset 0 2px #c6edff, 0 5px 0 #075187, 0 9px 18px #032d4f99;
+  --ds-gap-small: 8px;
+  --ds-motion-fast: .25s;
+}
