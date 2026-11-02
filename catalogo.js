@@ -45,6 +45,7 @@ previous.addEventListener('click', () => { if (current > 0) { current--; renderC
 next.addEventListener('click', () => { if (current < examples.length - 1) { current++; renderCard(); } });
 renderCard();
 
-const exampleModal = document.querySelector('#example-modal');
-document.querySelector('#open-example-modal').addEventListener('click', () => exampleModal.showModal());
-document.querySelector('#close-example-modal').addEventListener('click', () => exampleModal.close());
+const exampleModal = document.querySelector('ads-modal-surface');
+exampleModal.onEscape = () => exampleModal.dismiss();
+document.querySelector('#open-example-modal').addEventListener('click', () => (exampleModal.onEscape = () => exampleModal.dismiss(), exampleModal.present()));
+document.querySelector('#close-example-modal').addEventListener('click', () => exampleModal.dismiss());
