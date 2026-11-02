@@ -12,7 +12,7 @@
 #modal:not(.completion-modal):not(.medal-board-modal) #modalCard{border:3px solid #4da8dc!important;border-radius:18px!important;box-shadow:0 7px 0 #073763,0 18px 40px #05284777!important;background:#f3faff!important;color:#163d5c}
 #modal:not(.completion-modal) .collection-heading h2{color:#104d7b}
 #modal:not(.completion-modal) .journal-empty{background:#deeffa;border-radius:12px;color:#315b79}
-@media (orientation:portrait){
+@media (orientation:portrait) and (min-width:768px){
  .journey-screen{overflow:auto!important;display:flex!important;flex-direction:column;min-height:100%;height:auto!important}
  .journey-top{flex:none}.journey-layout{flex:1;display:grid;grid-template-columns:1fr;grid-template-rows:auto auto auto;gap:10px;padding:8px 12px;align-items:stretch}
  .journey-center{grid-row:1;height:auto;gap:8px}.journey-scene{height:30vh;min-height:150px}.journey-actions .primary{width:100%}
@@ -42,7 +42,7 @@
 .journey-track{height:88%}.journey-stops{gap:clamp(4px,1vh,9px);padding:8px!important}.journey-stop-copy,.journey-stop:nth-child(n) .journey-stop-copy{background:linear-gradient(#17659d,#075087)!important;border:2px solid #57b5e0;border-radius:18px!important;padding:4px 10px!important}.journey-stop.is-current .journey-stop-copy{background:linear-gradient(#1264a2,#054679)!important;border-color:#ffdb4d!important}.journey-stop .journey-node{border:3px solid #c4e8fa!important;background:linear-gradient(#d8efff,#78b6e4)!important;color:#124c7a!important;box-shadow:0 3px #176699!important}.journey-stop.is-current .journey-node{background:linear-gradient(#ffed83,#ffae0a)!important;border-color:#ffe68a!important;color:#74450b!important;box-shadow:0 3px #a86000!important}.journey-stop.is-done .journey-node{background:linear-gradient(#c3f8a3,#55c571)!important;border-color:#d6ffbc!important}
 .journey-bottom{margin:4px auto clamp(5px,1vh,10px);width:min(72%,1000px);padding:5px!important;background:linear-gradient(#125b95,#053364)!important;border:3px solid #2c91c9!important;border-radius:24px!important;box-shadow:inset 0 2px #67bce7,0 5px 0 #062644,0 8px 12px #06233e99!important;gap:2px}.journey-nav{border:0;border-right:2px solid #082e55;border-radius:0;background:transparent;font-size:clamp(10px,1.5vw,16px);text-shadow:0 2px #073053}.journey-nav:last-child{border:0}.journey-nav span{font-size:clamp(20px,4vh,35px);vertical-align:middle;filter:drop-shadow(0 2px #032b4c)}.journey-nav.active{border:2px solid #61e8ff;border-radius:15px;background:linear-gradient(#00c5fc,#0074d2);box-shadow:inset 0 2px #c2faff,0 0 10px #00dfff}
 @media(max-height:420px){.journey-profile img{width:38px;height:38px}.journey-title{font-size:22px!important}.journey-scene{height:70%}.journey-actions .primary{padding:5px}.panel-heading span{font-size:22px}.mission-body{padding:6px;margin:5px}.journey-bottom{margin:2px auto;padding:2px!important}.journey-nav span{font-size:20px}}
-@media(orientation:portrait){.journey-layout{grid-template-columns:1fr}.journey-scene[data-map="quadra"]{height:30vh;min-height:180px}.journey-actions .primary{width:80%}.journey-bottom{width:calc(100% - 16px);margin:4px 8px}.journey-track{height:auto}.journey-profile{min-width:0}.journey-title{font-size:20px!important}}
+@media(orientation:portrait) and (min-width:768px){.journey-layout{grid-template-columns:1fr}.journey-scene[data-map="quadra"]{height:30vh;min-height:180px}.journey-actions .primary{width:80%}.journey-bottom{width:calc(100% - 16px);margin:4px 8px}.journey-track{height:auto}.journey-profile{min-width:0}.journey-title{font-size:20px!important}}
 /* Acabamento compartilhado inspirado no protótipo aprovado. */
 .journey-profile{position:relative;min-width:clamp(150px,20vw,270px);padding:0;border:0;background:none;box-shadow:none;overflow:visible}
 .journey-profile img{position:relative;z-index:2;flex:none;width:clamp(48px,12vh,94px);height:clamp(48px,12vh,94px);border:3px solid #f5c545;box-shadow:0 2px 0 #99641a,0 0 0 2px #fff2ba,0 4px 7px #052947aa}
@@ -64,8 +64,8 @@
 #modal:not(.completion-modal):not(.medal-board-modal) .primary,#learningScroll .primary{border:1px solid #cc850d!important;border-radius:12px!important;background:linear-gradient(#ffe984,#ffbf21)!important;color:#583413!important;box-shadow:inset 0 1px #fff8c4,0 3px 0 #ab6208!important}
 #modal:not(.completion-modal):not(.medal-board-modal) .secondary,#learningScroll .secondary{border:1px solid #4da4ce!important;border-radius:12px!important;background:linear-gradient(#e9f8ff,#b8e1f6)!important;color:#164a6e!important;box-shadow:inset 0 1px white,0 3px 0 #3981ac!important}
 @media(max-height:420px){.journey-profile img{width:42px;height:42px}.journey-profile .profile-card{padding-top:3px;padding-bottom:3px}.profile-progress{min-height:25px;padding-top:2px;padding-bottom:2px}.profile-star{font-size:22px}.journey-track{max-height:100%}.journey-stop-copy,.journey-stop:nth-child(n) .journey-stop-copy{min-height:21px}.journey-actions .primary{padding-top:6px;padding-bottom:6px}.journey-nav span{width:25px;height:25px}}
-@media(orientation:portrait){.journey-profile{min-width:145px}.journey-profile img{width:48px;height:48px}.journey-bottom{width:calc(100% - 16px)}.journey-track{max-height:26vh}.journey-actions .primary{width:80%}}
-@media(orientation:portrait){.journey-nav{flex-direction:column;gap:2px;white-space:normal;font-size:clamp(7px,2.2vw,9px)}.journey-nav span{width:26px;height:26px}}
+@media(orientation:portrait) and (min-width:768px){.journey-profile{min-width:145px}.journey-profile img{width:48px;height:48px}.journey-bottom{width:calc(100% - 16px)}.journey-track{max-height:26vh}.journey-actions .primary{width:80%}}
+@media(orientation:portrait) and (min-width:768px){.journey-nav{flex-direction:column;gap:2px;white-space:normal;font-size:clamp(7px,2.2vw,9px)}.journey-nav span{width:26px;height:26px}}
 #stickBase,#stickRightBase{border:2px solid #81d5f4!important;background:linear-gradient(#1674a9bb,#06426fbb)!important;box-shadow:inset 0 2px 8px #bcecff88,0 4px 0 #07385f!important}
 #stick,#stickRight{background:linear-gradient(#e8faff,#84ceec)!important;border:1px solid #d6f5ff!important;box-shadow:0 3px 0 #226f9a!important}
 #playerSpeech .speech-bubble,#characterSpeech .speech-bubble,#characterSpeech .story-quote,#playerSpeech .story-choice{border-color:#60b5df!important;background:#e4f6ff!important;box-shadow:0 3px 0 #4a9ac4!important}
@@ -81,13 +81,13 @@
 @keyframes collection-slide{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:translateX(0)}}
 @media(prefers-reduced-motion:reduce){.journey-collection{animation:none}}
 @media(max-height:420px){.journey-track .panel-heading{min-height:35px}.journey-track .map-icon{width:46px;height:46px}.journey-stop-copy,.journey-stop:nth-child(n) .journey-stop-copy{min-height:25px}.journey-arrow{height:18px}.journey-collection{padding:6px}.collection-slide-heading{padding:4px 10px}.collection-slide-content{margin-top:5px;padding:6px}}
-@media(orientation:portrait){.journey-track{max-height:none}.journey-collection{width:calc(100% - 24px);min-height:50vh;margin:8px 12px;flex:1}.journey-track .panel-heading{padding-left:70px}}
+@media(orientation:portrait) and (min-width:768px){.journey-track{max-height:none}.journey-collection{width:calc(100% - 24px);min-height:50vh;margin:8px 12px;flex:1}.journey-track .panel-heading{padding-left:70px}}
 .journey-title{width:clamp(155px,28vw,410px);height:clamp(58px,14vh,125px);margin:0;display:flex;align-items:center;justify-content:center;-webkit-text-stroke:0!important;animation:logo-float 4s ease-in-out infinite}
 .journey-title img{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 4px 2px #06335888)}
 @keyframes logo-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
 @media(prefers-reduced-motion:reduce){.journey-title{animation:none}}
 @media(max-height:420px){.journey-title{height:49px;width:clamp(130px,25vw,260px)}}
-@media(orientation:portrait){.journey-title{width:clamp(125px,36vw,220px);height:65px}}
+@media(orientation:portrait) and (min-width:768px){.journey-title{width:clamp(125px,36vw,220px);height:65px}}
 /* Cartas de lições e momento de recompensa após a fala do BraIAn. */
 #discoveryRewards[hidden]{display:none!important}
 #learningScroll.is-summary{width:min(860px,calc(100% - 24px));max-height:calc(100% - 20px);border:2px solid #50a8da!important;border-radius:18px!important;background:radial-gradient(circle at 50% 40%,#16659a,#082d50 78%)!important;color:#fff;box-shadow:0 8px 30px #041b32bb,0 0 0 100vmax #061a2bdc!important;overflow:hidden}
@@ -109,7 +109,7 @@
 .discovery-notes{margin-top:18px;color:#215575}.discovery-notes>summary{cursor:pointer;font-weight:800;padding:9px;border-radius:9px;background:#abd9ee}.discovery-notes .journal-entry{margin-top:8px}
 .collection-slide-content .discovery-grid{grid-template-columns:repeat(auto-fit,minmax(115px,155px))}.collection-slide-content .discovery-card{box-shadow:0 3px 0 #34759b}
 @media(max-height:420px){#learningScroll.is-summary .learning-scroll-title{padding:5px}.discovery-reward-art img{max-height:25vh}#discoveryRewards{padding:5px 10px}.discovery-reward-list{max-height:48vh}.discovery-card summary{min-height:90px}.discovery-card-art{min-height:42px;font-size:30px}#learningScroll.is-summary #learningScrollActions{padding:5px}#learningScroll.is-summary #learningScrollActions .primary,#learningScroll.is-summary #learningScrollActions .secondary{padding:6px}}
-@media(orientation:portrait){#discoveryRewards{flex-direction:column}.discovery-reward-art{flex:0 0 auto}.discovery-reward-art img{height:18vh}.discovery-reward-list{width:100%;max-height:42vh}.discovery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(orientation:portrait) and (min-width:768px){#discoveryRewards{flex-direction:column}.discovery-reward-art{flex:0 0 auto}.discovery-reward-art img{height:18vh}.discovery-reward-list{width:100%;max-height:42vh}.discovery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 #discoveryRewards{position:relative}.discovery-card.is-arriving{visibility:hidden}.discovery-card.discovery-flight{position:absolute;z-index:5;pointer-events:none;transform-origin:center;overflow:hidden}.discovery-card.discovery-flight summary{height:100%;min-height:0}.discovery-card.discovery-flight p{display:none}
 /* O perfil da jornada permanece visível durante as fases. */
 #topbar{padding:clamp(5px,1vh,10px) clamp(8px,2vw,20px)!important;align-items:flex-start}
@@ -145,7 +145,7 @@
 @keyframes discovery-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 @media(prefers-reduced-motion:reduce){.discovery-card{animation:none!important}.discovery-card-flip{transition:none}}
 @media(max-height:420px){.discovery-card-button{height:clamp(145px,39vh,180px)}.discovery-grid{gap:10px}.discovery-number{height:20px;font-size:11px}.discovery-back-icon{font-size:20px}.discovery-card-name{min-height:25px;margin-bottom:5px}.discovery-lesson{font-size:9px}}
-@media(orientation:portrait){.discovery-card-button{height:210px}.discovery-lesson{font-size:11px}}
+@media(orientation:portrait) and (min-width:768px){.discovery-card-button{height:210px}.discovery-lesson{font-size:11px}}
 /* A moldura flutua dentro da área de toque, que permanece estável. */
 .discovery-card{animation:none!important}.discovery-card-flip{animation:discovery-inner-float 3.8s ease-in-out infinite}.discovery-card:nth-child(2n) .discovery-card-flip{animation-delay:-1.2s}.discovery-card:nth-child(3n) .discovery-card-flip{animation-delay:-2.3s}.discovery-card.is-flipped .discovery-card-flip,.discovery-flight .discovery-card-flip{animation:none}
 @keyframes discovery-inner-float{0%,100%{translate:0 0}50%{translate:0 -4px}}
@@ -165,7 +165,7 @@
 .discovery-lesson{position:absolute;left:14%;top:49%;width:72%;height:27%;margin:0;padding:3px;border:0;border-radius:0;background:transparent;color:#fff;font-size:clamp(10px,1vw,12px);line-height:1.22;text-align:center;overflow:auto;scrollbar-width:thin;scrollbar-color:#55a8d1 transparent}
 .discovery-card.discovery-flight .discovery-card-button{height:100%!important;aspect-ratio:auto}
 @media(max-height:420px){.discovery-grid{grid-template-columns:repeat(auto-fit,minmax(125px,150px))}.discovery-card-button{height:auto!important}.discovery-card-name{font-size:10px}.discovery-lesson{font-size:9px}}
-@media(orientation:portrait){.discovery-grid,.collection-slide-content .discovery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.discovery-card-button{height:auto!important}.discovery-lesson{font-size:11px}}
+@media(orientation:portrait) and (min-width:768px){.discovery-grid,.collection-slide-content .discovery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.discovery-card-button{height:auto!important}.discovery-lesson{font-size:11px}}
 .collection-slide-content .discovery-card{box-shadow:none!important}
 /* Carrossel de descobertas: três cartas e navegação de uma em uma. */
 .discovery-carousel{display:grid;grid-template-columns:clamp(28px,4vw,44px) minmax(0,1fr) clamp(28px,4vw,44px);gap:clamp(4px,1vw,12px);align-items:center;width:100%}
@@ -174,11 +174,11 @@
 .discovery-carousel-arrow{display:grid;place-items:center;width:clamp(28px,4vw,44px);height:clamp(32px,5vh,48px);padding:0;border:1px solid #8bdcff;border-radius:9px;background:linear-gradient(#6cd4f9,#1684c0);box-shadow:inset 0 1px #d9f8ff,0 3px 0 #07517e;color:#fff;text-shadow:0 2px #1d6790;font-size:clamp(14px,2vw,22px);cursor:pointer}.discovery-carousel-arrow:disabled{opacity:.35;cursor:default}.discovery-carousel-arrow:focus-visible{outline:3px solid #fff174;outline-offset:2px}
 .discovery-reward-list{overflow:visible;max-height:none}.discovery-carousel .discovery-card-name{font-size:clamp(8px,1.1vw,15px)}.discovery-carousel .discovery-lesson{font-size:clamp(9px,1vw,12px)}
 @media(max-height:420px){.discovery-carousel .discovery-card{max-width:145px}.discovery-carousel-arrow{height:30px}}
-@media(orientation:portrait){.discovery-carousel .discovery-grid,.collection-slide-content .discovery-carousel .discovery-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}.discovery-carousel .discovery-card-name{font-size:8px}.discovery-carousel .discovery-lesson{font-size:9px}}
+@media(orientation:portrait) and (min-width:768px){.discovery-carousel .discovery-grid,.collection-slide-content .discovery-carousel .discovery-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}.discovery-carousel .discovery-card-name{font-size:8px}.discovery-carousel .discovery-lesson{font-size:9px}}
 /* As três cartas cabem na área central em telas horizontais baixas. */
 .collection-slide-content .discovery-carousel .discovery-card{max-width:clamp(90px,calc(66.67vh - 223px),190px)}
 .discovery-reward-list .discovery-carousel .discovery-card{max-width:clamp(85px,25vh,190px)}
-@media(orientation:portrait){.collection-slide-content .discovery-carousel .discovery-card,.discovery-reward-list .discovery-carousel .discovery-card{max-width:190px}}
+@media(orientation:portrait) and (min-width:768px){.collection-slide-content .discovery-carousel .discovery-card,.discovery-reward-list .discovery-carousel .discovery-card{max-width:190px}}
 /* Mais espaço para as cartas na recompensa em celular horizontal. */
 @media(orientation:landscape){
  #learningScroll.is-summary{height:min(520px,calc(100% - 20px));max-height:calc(100% - 20px)}
@@ -244,7 +244,7 @@
 .reward-stage{position:relative;flex:0 0 clamp(155px,27vw,240px);height:clamp(190px,43vh,300px);display:flex;align-items:flex-start;justify-content:center}.reward-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 70%,#fffad7 0,#ffe46ba6 22%,#ffcf3333 46%,transparent 70%)}.reward-card{position:relative;z-index:2;width:48%;max-width:125px}.gift-box{position:absolute;z-index:3;bottom:2%;left:22%;width:56%;height:31%;filter:drop-shadow(0 6px 4px #001c39aa)}.gift-body{position:absolute;inset:18% 5% 0;border:3px solid #036198;border-radius:4px 4px 12px 12px;background:linear-gradient(90deg,#078dd3 0 36%,#ffc62a 36% 62%,#079de3 62%);box-shadow:inset 0 3px #75dcff}.gift-lid{position:absolute;z-index:2;left:0;right:0;top:8%;height:25%;border:3px solid #006a9e;border-radius:5px;background:linear-gradient(90deg,#14b3ed 0 36%,#ffd641 36% 62%,#10a8ea 62%);transform:rotate(-5deg);box-shadow:inset 0 3px #97eaff}.gift-bow{position:absolute;z-index:3;left:40%;top:-19%;color:#ffdf50;font-size:clamp(30px,6vh,48px);text-shadow:0 3px #b86d05}.reward-sparkle{position:absolute;color:#fff4b2;font-size:clamp(20px,4vh,32px);text-shadow:0 0 12px #ffed70}.sparkle-one{left:8%;top:20%}.sparkle-two{right:8%;top:35%}
 #learningScroll.is-summary #learningScrollActions{justify-content:center;background:#072c59;border-top:1px solid #4b9ccc;padding:8px 16px 12px}.medal-chest{display:block;width:clamp(55px,12vh,95px);max-height:12vh;object-fit:contain;margin:0 auto 2px}.collection-medal-chest{display:block;width:min(150px,35%);max-height:120px;object-fit:contain;margin:0 auto 10px}
 @media(max-height:420px){#learningScroll.is-summary .learning-scroll-title{padding:4px;font-size:18px}#learningScroll.is-summary #discoveryRewards{padding:3px 15px}.reward-stage{height:48vh;flex-basis:145px}.reward-card{width:43%}.reward-heading strong{font-size:22px}.medal-chest{max-height:9vh}}
-@media(max-width:480px) and (orientation:portrait){#learningScroll.is-summary #discoveryRewards{flex-direction:column;gap:0}.reward-heading strong{margin:3px 0}.reward-stage{flex:auto;width:180px;height:220px}.reward-heading small{font-size:10px}}
+@media(max-width:480px) and (orientation:portrait) and (min-width:768px){#learningScroll.is-summary #discoveryRewards{flex-direction:column;gap:0}.reward-heading strong{margin:3px 0}.reward-stage{flex:auto;width:180px;height:220px}.reward-heading small{font-size:10px}}
 /* A área da recompensa ocupa toda a altura disponível. */
 #learningScroll.is-summary #discoveryRewards .reward-stage{align-self:stretch;height:auto;min-height:0}
 /* No verso, a carta ocupa a área de leitura à esquerda da recompensa. */
@@ -253,15 +253,18 @@
 #learningScroll.is-summary #discoveryRewards:has(.reward-card .discovery-card.is-flipped) .reward-card{position:absolute;left:8%;top:50%;height:100%;width:auto;aspect-ratio:2/3;max-width:40%;transform:translateY(-50%)}
 #learningScroll.is-summary #discoveryRewards:has(.reward-card .discovery-card.is-flipped) .gift-box{left:auto;right:8%;width:28%}
 #learningScroll.is-summary #discoveryRewards:has(.reward-card .discovery-card.is-flipped) .discovery-lesson{font-size:clamp(11px,1.6vw,16px)}
-/* A mesma navegação das cartas organiza as medalhas da recompensa. */
-#modal.medal-board-modal #modalCard.medal-board-card{width:min(720px,calc(100% - 16px));max-width:720px;max-height:calc(100% - 16px);padding:clamp(8px,2vh,16px);border:3px solid #73c9ef;border-radius:18px;background:linear-gradient(#52b9ed,#1685c2);box-shadow:inset 0 2px #c7efff,0 5px 0 #075187,0 12px 28px #032d4f99;color:#16486c}
-.medal-board-card h2{color:#fff!important;text-shadow:0 2px #075187}.medal-board-card p{color:#e6f7ff}.medal-board-card .discovery-carousel{padding:clamp(5px,1.5vh,12px);margin:5px 0 10px;border:1px solid #effaff;border-radius:14px;background:linear-gradient(#e6f7ff,#c6e9fa);box-shadow:0 3px 0 #378fbc}
-.medal-board-card .discovery-grid{align-items:stretch}.medal-board-card .medal-slot{height:clamp(82px,20vh,150px);min-height:0}.medal-board-card .medal-slot[hidden]{display:none!important}.medal-board-card .medal-slot.earned{animation:none}.medal-arriving{visibility:hidden}.medal-flight{margin:0;box-sizing:border-box}
-@media(max-height:420px){.medal-board-card .medal-chest{max-height:14vh}.medal-board-card .medal-slot{height:clamp(70px,23vh,100px)}.medal-board-card .discovery-carousel{margin:2px 0 6px}}
-
-.medal-board-card .medal-slot.locked strong{display:none}
-#modal.medal-board-modal #modalCard.medal-board-card{background:linear-gradient(#52b9ed,#1685c2)!important}
-.medal-board-card .medal-slot.earned strong{color:#fff4cf!important}
+/* A tela de medalhas compartilha o cabeçalho, o painel e a moldura das coleções. */
+.medal-collection .medal-chest{width:clamp(44px,7vh,58px);height:clamp(40px,7vh,54px);max-height:none;object-fit:contain;margin:0}
+.medal-collection .discovery-grid{align-items:stretch}
+.medal-collection .medal-slot{height:clamp(82px,18vh,136px);min-height:0}
+.medal-collection .medal-slot[hidden]{display:none!important}
+.medal-collection .medal-slot.earned{animation:none}
+.medal-collection .medal-slot.locked strong{display:none}
+.medal-collection .medal-slot.earned strong{color:#16486c!important}
+.medal-board-actions{display:flex;justify-content:center;gap:clamp(8px,2vw,18px);padding-top:clamp(8px,1.5vh,14px)}
+.medal-board-actions ads-action-button{flex:1;max-width:280px}
+.medal-arriving{visibility:hidden}.medal-flight{margin:0;box-sizing:border-box}
+@media(max-height:420px){.medal-collection .medal-chest{width:38px;height:34px}.medal-collection .medal-slot{height:clamp(70px,18vh,96px)}}
 /* A coleção no modal mantém a mesma apresentação da jornada. */
 #modal.collection-modal{align-items:center}
 #modal.collection-modal #modalCard.collection-modal-card{width:min(78vw,950px);max-width:950px;max-height:calc(100% - 12px);padding:0;border:0!important;background:transparent!important;box-shadow:none!important;overflow:visible}
@@ -269,3 +272,24 @@
 .collection-slide-heading .collection-close{margin-left:auto}
 @media(max-height:420px){.collection-modal-card .journey-collection{height:calc(100vh - 28px)}}
 @media(max-width:650px){#modal.collection-modal #modalCard.collection-modal-card{width:calc(100vw - 24px)}}
+@media(orientation:portrait) and (max-width:767px){
+ html.forced-landscape .journey-screen{height:100%!important;min-height:0!important;overflow:hidden!important;display:grid!important;grid-template-rows:auto minmax(0,1fr) auto!important}
+ html.forced-landscape .journey-layout{grid-template-columns:minmax(110px,22%) minmax(0,1fr) minmax(130px,22%);grid-template-rows:none;align-items:center}
+ html.forced-landscape .journey-center{grid-row:auto;height:100%}
+ html.forced-landscape .journey-scene{height:65%;min-height:70px}
+ html.forced-landscape .journey-mission{grid-row:auto}
+ html.forced-landscape .journey-track{height:90%;max-height:90%;grid-row:auto}
+ html.forced-landscape .journey-bottom{position:relative;bottom:auto;width:min(72%,1000px);margin:4px auto clamp(5px,1vh,10px)}
+ html.forced-landscape .journey-nav{flex-direction:row;gap:clamp(5px,1vw,12px);white-space:nowrap;font-size:clamp(9px,1.4vw,16px)}
+ html.forced-landscape .journey-collection{width:min(78%,950px);min-height:0;margin:0;flex:0 1 auto}
+ html.forced-landscape #objective{top:64px!important;width:calc(100dvh - 250px);max-width:calc(100dvh - 250px)!important;font-size:12px!important;padding:10px 13px!important}
+ html.forced-landscape .next-map-intro{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);max-height:90vh}
+ html.forced-landscape .next-map-art img{max-height:55vh}
+ html.forced-landscape .next-map-content h2{font-size:clamp(23px,4vw,48px)!important}
+ html.forced-landscape #modal.collection-modal #modalCard.collection-modal-card{width:min(78dvh,950px);max-width:min(78dvh,950px)}
+ html.forced-landscape .collection-modal-card .journey-collection{height:min(72dvw,600px);max-height:calc(100dvw - 36px)}
+ html.forced-landscape .discovery-carousel .discovery-card-name{font-size:clamp(10px,1.1vw,15px)}
+ html.forced-landscape .discovery-carousel .discovery-lesson{font-size:clamp(9px,1vw,12px)}
+ html.forced-landscape #learningScroll.is-summary #discoveryRewards{flex-direction:row;gap:clamp(8px,3vw,28px)}
+ html.forced-landscape #learningScroll.is-summary .reward-stage{flex:0 0 clamp(155px,27vw,240px);width:auto;height:clamp(190px,43dvw,300px)}
+}

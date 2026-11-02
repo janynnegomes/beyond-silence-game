@@ -1,5 +1,5 @@
 /* Efeito visual compartilhado pela marca na abertura e na jornada. */
-ads-journey-window,ads-journey-profile,ads-panel-heading,ads-journey-panel,ads-action-button,ads-story-choice,ads-empty-state,ads-journal-entry,ads-dialogue-exchange{display:contents}
+ads-journey-window,ads-journey-profile,ads-panel-heading,ads-journey-panel,ads-action-button,ads-count-button,ads-story-choice,ads-empty-state,ads-journal-entry,ads-dialogue-exchange{display:contents}
 .row>ads-action-button>button{flex:1}
 ads-discovery-card{display:block}ads-discovery-card[hidden]{display:none!important}
 ads-story-tile{display:block}

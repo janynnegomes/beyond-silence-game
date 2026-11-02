@@ -1,10 +1,11 @@
-const CACHE_NAME = "alem-do-silencio-eea64c94de559f5a";
+const CACHE_NAME = "alem-do-silencio-09c6d1b1b1afd636";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./bundle.js",
   "./components.js",
   "./manifest.webmanifest",
+  "./assets/audio/the-budding-of-consciousness.mp3",
   "./assets/avatar-jogador.svg",
   "./assets/icons/apple-touch-icon.png",
   "./assets/icons/icon-192.png",
