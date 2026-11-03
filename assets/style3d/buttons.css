@@ -1,0 +1,53 @@
+/* Linguagem compartilhada para ações, navegação e escolhas do jogo. */
+:root{
+  --button-gold:linear-gradient(#fff17b 0%,#ffdc37 45%,#ffb609 48%,#ffc323 100%);
+  --button-blue:linear-gradient(#39a6da,#0874b2 48%,#07518d 49%,#08619e);
+  --button-light:linear-gradient(#f5fcff,#c8ebfa);
+  --button-font:'Arial Black',system-ui,sans-serif;
+}
+/* Mantém as dimensões de cada tela; a aparência vem destas variantes. */
+html body #app button.primary,
+html body #app #modal .primary,
+html body #app #learningScroll .primary,
+html body #app .journey-actions .primary,
+html body #app #learningScroll.is-summary #learningScrollActions .primary{
+  border:3px solid #a44b05!important;
+  border-radius:999px!important;
+  background:var(--button-gold)!important;
+  color:#6b2809!important;
+  box-shadow:inset 0 2px #fff9bf,0 4px #8d3503,0 6px 8px #001b3c66!important;
+  font-family:var(--button-font)!important;font-weight:900;
+  -webkit-text-stroke:0;paint-order:normal;text-shadow:0 1px #ffe98b!important;
+}
+html body #app button.secondary,
+html body #app #modal .secondary,
+html body #app #learningScroll .secondary,
+html body #app .journey-actions .secondary{
+  border:2px solid #07518d!important;
+  border-radius:999px!important;
+  background:var(--button-light)!important;
+  color:#10466f!important;
+  box-shadow:inset 0 2px #fff,0 4px #07518d,0 6px 8px #001b3c55!important;
+  font-family:var(--button-font)!important;font-weight:900;text-shadow:none!important;
+}
+html body #app :is(.iconbtn,#learningToggle,.journey-settings,.journey-arrow,.discovery-carousel-arrow,.collection-close,.journey-nav){
+  border:2px solid #75c7ef!important;
+  border-radius:12px!important;
+  background:var(--button-blue)!important;
+  color:#fff!important;
+  box-shadow:inset 0 2px #b8eaff,0 3px #04365f,0 5px 7px #02274466!important;
+  font-family:var(--button-font);font-weight:900;text-shadow:0 2px #073e6a;
+}
+html body #app .journey-nav.active{border-color:#ffe071!important;box-shadow:inset 0 0 0 2px #ffcd38,0 3px #04365f,0 5px 7px #02274466!important}
+html body #app .story-choice,html body #app #playerSpeech .story-choice{
+  border:2px solid #61acd3!important;border-radius:13px!important;
+  background:var(--button-light)!important;color:#153e5c!important;
+  box-shadow:inset 0 2px #fff,0 3px #3981ac!important;
+}
+html body #app button:focus-visible{outline:3px solid #fff174!important;outline-offset:3px}
+html body #app :is(.primary,.secondary,.iconbtn,#learningToggle,.journey-settings,.journey-arrow,.discovery-carousel-arrow,.collection-close,.journey-nav,.story-choice):disabled{opacity:.5;cursor:not-allowed;filter:saturate(.6)}
+@media (hover:hover){
+  html body #app :is(.primary,.secondary,.iconbtn,#learningToggle,.journey-settings,.journey-arrow,.discovery-carousel-arrow,.collection-close,.journey-nav,.story-choice):not(:disabled):hover{filter:brightness(1.08)}
+}
+html body #app :is(.primary,.secondary,.iconbtn,#learningToggle,.journey-settings,.journey-arrow,.discovery-carousel-arrow,.collection-close,.journey-nav,.story-choice):not(:disabled):active{filter:brightness(.95)}
+

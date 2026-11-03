@@ -1,4 +1,4 @@
-const CACHE_NAME = "alem-do-silencio-4f3540031548d62d";
+const CACHE_NAME = "alem-do-silencio-ee5c380c8c2dcdde";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -23,6 +23,7 @@ const APP_SHELL = [
   "./assets/style3d/brian-sheet.png",
   "./assets/style3d/brian-talking.png",
   "./assets/style3d/brian.jpg",
+  "./assets/style3d/buttons.css",
   "./assets/style3d/carta-frente-moldura.png",
   "./assets/style3d/carta-verso-limpo.png",
   "./assets/style3d/carta-verso-moldura.png",
@@ -78,6 +79,7 @@ const APP_SHELL = [
   "./assets/style3d/portrait-lucas.png",
   "./assets/style3d/portrait-player.png",
   "./assets/style3d/portrait-teacher.png",
+  "./assets/style3d/presente-conquista.png",
   "./assets/style3d/seated-bia.png",
   "./assets/style3d/seated-lucas.png",
   "./assets/style3d/speech-bia-seated-happy.png",
