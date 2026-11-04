@@ -2,7 +2,7 @@
 
 // O jogo ainda mantém parte dos componentes no <style> de index.html.
 // Carregá-lo evita manter uma segunda cópia que se desatualize silenciosamente.
-fetch('index.html').then(response => {
+if (!document.querySelector('#catalog-initial-styles')) fetch('index.html').then(response => {
   if (!response.ok) throw new Error('Não foi possível ler index.html');
   return response.text();
 }).then(html => {
@@ -49,3 +49,17 @@ const exampleModal = document.querySelector('ads-modal-surface');
 exampleModal.onEscape = () => exampleModal.dismiss();
 document.querySelector('#open-example-modal').addEventListener('click', () => (exampleModal.onEscape = () => exampleModal.dismiss(), exampleModal.present()));
 document.querySelector('#close-example-modal').addEventListener('click', () => exampleModal.dismiss());
+
+// Modo de incorporação usado pela documentação gerada pelo Compodoc.
+const previewTag = new URLSearchParams(location.search).get('component');
+if (previewTag && /^ads-[a-z-]+$/.test(previewTag)) {
+  const target = previewTag === 'ads-modal-surface'
+    ? document.querySelector('#open-example-modal')
+    : document.querySelector(`.catalog-main ${previewTag}`);
+  const section = target?.closest('.catalog-main > section');
+  if (section) {
+    document.body.classList.add('catalog-embedded');
+    document.querySelectorAll('.catalog-main > section').forEach(item => { if (item !== section) item.hidden = true; });
+    document.title = `Exemplo de ${previewTag}`;
+  }
+}

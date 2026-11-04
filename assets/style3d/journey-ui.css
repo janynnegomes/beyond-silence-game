@@ -83,7 +83,7 @@
 @media(max-height:420px){.journey-track .panel-heading{min-height:35px}.journey-track .map-icon{width:46px;height:46px}.journey-stop-copy,.journey-stop:nth-child(n) .journey-stop-copy{min-height:25px}.journey-arrow{height:18px}.journey-collection{padding:6px}.collection-slide-heading{padding:4px 10px}.collection-slide-content{margin-top:5px;padding:6px}}
 @media(orientation:portrait) and (min-width:768px){.journey-track{max-height:none}.journey-collection{width:calc(100% - 24px);min-height:50vh;margin:8px 12px;flex:1}.journey-track .panel-heading{padding-left:70px}}
 .journey-title{width:clamp(155px,28vw,410px);height:clamp(58px,14vh,125px);margin:0;display:flex;align-items:center;justify-content:center;-webkit-text-stroke:0!important;animation:logo-float 4s ease-in-out infinite}
-.journey-title img{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 4px 2px #06335888)}
+.journey-title img{height:100%;object-fit:contain;filter:drop-shadow(0 4px 2px #06335888)}
 @keyframes logo-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
 @media(prefers-reduced-motion:reduce){.journey-title{animation:none}}
 @media(max-height:420px){.journey-title{height:49px;width:clamp(130px,25vw,260px)}}
