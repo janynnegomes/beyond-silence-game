@@ -88,7 +88,7 @@
 @media(prefers-reduced-motion:reduce){.journey-title{animation:none}}
 @media(max-height:420px){.journey-title{height:49px;width:clamp(130px,25vw,260px)}}
 @media(orientation:portrait) and (min-width:768px){.journey-title{width:clamp(125px,36vw,220px);height:65px}}
-/* Cartas de lições e momento de recompensa após a fala do BraIAn. */
+/* Cartas de lições e momento de recompensa após a fala do Mago. */
 #discoveryRewards[hidden]{display:none!important}
 #learningScroll.is-summary{width:min(860px,calc(100% - 24px));max-height:calc(100% - 20px);border:2px solid #50a8da!important;border-radius:18px!important;background:radial-gradient(circle at 50% 40%,#16659a,#082d50 78%)!important;color:#fff;box-shadow:0 8px 30px #041b32bb,0 0 0 100vmax #061a2bdc!important;overflow:hidden}
 #learningScroll.is-summary .learning-scroll-title{background:linear-gradient(#136caa,#064577);border-bottom:1px solid #63b6df;color:white;text-align:center;font-size:clamp(13px,2.2vw,22px);letter-spacing:.06em;text-shadow:0 2px #043558}
