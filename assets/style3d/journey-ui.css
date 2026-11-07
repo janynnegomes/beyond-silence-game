@@ -318,3 +318,31 @@
 @media(max-height:420px){#learningScroll.is-summary .learning-scroll-title{font-size:clamp(20px,7vh,30px)}.reward-heading strong{font-size:clamp(19px,6vh,27px)}.reward-hint{font-size:11px}#learningScroll.is-summary #learningScrollActions .primary{font-size:16px;padding:4px 20px}}
 @media(orientation:portrait){#learningScroll.is-summary{height:min(80dvh,760px)!important;width:calc(100% - 20px)!important}.reward-heading strong{font-size:clamp(21px,6vw,44px)}.reward-card{height:min(68%,300px)}.gift-box{width:100%}#learningScroll.is-summary #discoveryRewards:has(.reward-card .discovery-card.is-flipped) .reward-card{left:5%;max-width:55%}}
 @media(orientation:landscape){html.forced-landscape #learningScroll.is-summary #discoveryRewards{flex-direction:column;gap:0}html.forced-landscape #learningScroll.is-summary .reward-stage{flex:1 1 auto;width:min(100%,750px);height:auto}}
+
+/* Seletor de mundos: grade de cartoes antes da home da jornada. */
+#worldSelectScreen{position:absolute;z-index:7;inset:0;display:none;overflow:auto;background:radial-gradient(circle at 50% 30%,#177ab7,#073568 75%),linear-gradient(180deg,#075497c9,#064b80c9)}
+.world-select-screen{min-height:100%;display:flex;flex-direction:column;align-items:center;padding:clamp(8px,2.5vh,26px) 4% calc(16px + env(safe-area-inset-bottom,0px));color:#fff}
+.world-select-top{display:flex;align-items:center;justify-content:space-between;gap:10px;width:min(1000px,100%)}
+.world-select-subtitle{margin:2px 0 clamp(10px,2.5vh,22px);color:#d4efff;font-size:clamp(11px,1.5vw,16px);font-weight:700;text-align:center}
+.world-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(10px,2vw,22px);width:min(1000px,100%);padding-bottom:10px}
+.world-card{position:relative;display:flex;flex-direction:column;padding:0;border:3px solid #5abfea;border-radius:18px;overflow:hidden;background:linear-gradient(#247fb6,#0e578f);box-shadow:0 5px 0 #06345f,0 10px 18px #00244c66;color:#fff;text-align:left;cursor:pointer;font:inherit}
+.world-card:active{transform:translateY(3px);box-shadow:0 2px 0 #06345f,0 6px 10px #00244c66}
+.world-card-art{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#0b4d82}
+.world-card-body{display:flex;flex-direction:column;gap:4px;padding:10px 12px 12px}
+.world-card-body strong{font-size:clamp(13px,1.8vw,19px);font-weight:1000;letter-spacing:.02em;text-transform:uppercase}
+.world-card-body small{font-size:clamp(10px,1.3vw,13px);line-height:1.3;color:#c3e7f8;font-weight:700}
+.world-card-meta{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:4px}
+.world-card-progress{font-size:clamp(9px,1.2vw,12px);font-weight:800;color:#d4efff;background:#0a4878;border-radius:8px;padding:3px 8px;white-space:nowrap}
+.world-card-badge{position:absolute;top:8px;right:8px;padding:4px 9px;border-radius:99px;background:linear-gradient(#c3f8a3,#55c571);border:2px solid #d6ffbc;color:#173a12;font-size:clamp(8px,1.1vw,11px);font-weight:1000;letter-spacing:.08em;box-shadow:0 2px 0 #2c7a43;pointer-events:none}
+.world-select-screen button:focus-visible{outline:3px solid #fff27d;outline-offset:2px}
+@media(max-height:420px){.world-select-screen{padding-top:4px}.world-select-subtitle{margin-bottom:6px}.world-grid{gap:8px}.world-card-body{padding:6px 9px 8px}.world-card-body small{display:none}}
+
+/* Navegação de volta aos mundos e identificação do mundo na home da jornada. */
+.journey-top-left{display:flex;align-items:center;gap:8px;min-width:0}
+.journey-back.journey-settings{width:auto;height:auto;min-height:clamp(42px,8vh,72px);padding:0 14px;gap:6px;display:inline-flex;align-items:center;justify-content:center}
+.journey-back svg{width:clamp(18px,3.5vh,28px);height:clamp(18px,3.5vh,28px);flex:none}
+.journey-back span{font-size:clamp(10px,1.6vw,15px);font-weight:1000;letter-spacing:.05em;white-space:nowrap}
+.journey-title{position:relative}
+.journey-world-name{position:absolute;left:50%;bottom:-4px;transform:translateX(-50%);padding:2px 12px;border-radius:99px;background:linear-gradient(#ffe66b,#ffb300);color:#423015;font-size:clamp(9px,1.4vw,14px);font-weight:1000;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;box-shadow:0 2px 0 #a75c00;z-index:2}
+@media(max-height:420px){.journey-back span{display:none}.journey-world-name{font-size:9px;padding:1px 8px;bottom:-2px}}
+@media(max-width:650px){.journey-back span{display:none}.journey-world-name{font-size:8px;padding:1px 7px}}

@@ -414,8 +414,11 @@ h1,h2,p{margin-top:0}h1{font-size:30px;line-height:1.05;margin-bottom:10px}h2{fo
 <div id="startScreen">
  <main class="journey-screen" aria-labelledby="journeyTitle">
   <header class="journey-top">
-   <ads-journey-profile id="journeyProfile" progress-id="journeyProgress" announce></ads-journey-profile>
-   <h1 class="journey-title ui-logo-float" id="journeyTitle"><img class="ui-logo" src="assets/style3d/logo-jornada.png" alt="Além do Silêncio"></h1>
+   <div class="journey-top-left">
+    <button class="journey-settings journey-back" id="journeyBackWorlds" type="button" aria-label="Voltar para a escolha de mundos"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M42 12 22 32l20 20" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg><span>MUNDOS</span></button>
+    <ads-journey-profile id="journeyProfile" progress-id="journeyProgress" announce></ads-journey-profile>
+   </div>
+   <h1 class="journey-title ui-logo-float" id="journeyTitle"><img class="ui-logo" src="assets/style3d/logo-jornada.png" alt="Além do Silêncio"><span class="journey-world-name" id="journeyWorldName"></span></h1>
    <button class="journey-settings" id="journeySettings" aria-label="Configurações e ajuda">⚙</button>
   </header>
   <div class="journey-layout">
@@ -431,6 +434,16 @@ h1,h2,p{margin-top:0}h1{font-size:30px;line-height:1.05;margin-bottom:10px}h2{fo
    <button class="journey-nav" id="journeyAchievements" type="button"><span aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M15 13H6v7c0 10 7 15 15 15M49 13h9v7c0 10-7 15-15 15" fill="none" stroke="#694b16" stroke-width="7"/><path d="M15 12H7v8c0 7 5 11 11 11M49 12h8v8c0 7-5 11-11 11" fill="none" stroke="#ffcc39" stroke-width="4"/><path d="M15 7h34l-3 19c-1 9-7 14-14 14s-13-5-14-14z" fill="#ffc82d" stroke="#734711" stroke-width="4"/><path d="M22 10h9l-3 20c-4-3-6-9-6-20" fill="#ffe984"/><path d="M28 39h8v9h8v7H20v-7h8z" fill="#e6a818" stroke="#734711" stroke-width="3"/></svg></span> CONQUISTAS</button>
   </nav>
  </main>
+ </div>
+ <div id="worldSelectScreen">
+  <main class="world-select-screen" aria-labelledby="worldSelectTitle">
+   <header class="world-select-top">
+    <h1 class="journey-title ui-logo-float" id="worldSelectTitle"><img class="ui-logo" src="assets/style3d/logo-jornada.png" alt="Além do Silêncio"></h1>
+    <button class="journey-settings" id="worldSelectSettings" aria-label="Configurações e ajuda">⚙</button>
+   </header>
+   <p class="world-select-subtitle">Escolha um mundo para continuar sua jornada</p>
+   <div class="world-grid" id="worldGrid"></div>
+  </main>
  </div>
 </div>
 <script>
