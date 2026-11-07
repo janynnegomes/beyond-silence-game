@@ -257,6 +257,10 @@ h1,h2,p{margin-top:0}h1{font-size:30px;line-height:1.05;margin-bottom:10px}h2{fo
 
 /* Os falantes recebem balões no cenário; só a área de pergunta e escolhas recebe cliques. */
 #dialogue{z-index:6;inset:0;padding:0;background:transparent;backdrop-filter:none;display:none;pointer-events:none}
+/* O modal é sempre a camada superior: #learningScroll.is-summary usa z-index:20
+   e, sem isto, um modal aberto durante o diálogo ficaria escondido atrás do
+   painel de conhecimento (que ainda assim seria inert, bloqueando cliques). */
+#modal{z-index:30}
 #dialogue.character-conversation{display:block}
 #dialogueCard.character-bubble{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);width:min(290px,38vw);max-height:min(44vh,390px);overflow:auto;padding:0;background:transparent;color:#183c57;border:0;box-shadow:none;pointer-events:auto;overscroll-behavior:contain}
 #dialogueCard.character-bubble.voice-busy{pointer-events:none}
@@ -428,7 +432,6 @@ h1,h2,p{margin-top:0}h1{font-size:30px;line-height:1.05;margin-bottom:10px}h2{fo
 <script>
 {const query=matchMedia('(orientation: portrait) and (max-width: 767px)'),app=document.getElementById('app'),loading=document.getElementById('loadingScreen');function updateOrientation(){document.documentElement.classList.toggle('forced-landscape',query.matches);app.inert=!loading.hidden}query.addEventListener('change',updateOrientation);document.addEventListener('game-ready',updateOrientation);updateOrientation()}
 </script>
-<script src="assets/vendor/phaser.min.js"></script>
 <script src="components.js"></script>
 <script src="bundle.js"></script>
 </body>
