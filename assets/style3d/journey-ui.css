@@ -68,6 +68,9 @@
 @media(orientation:portrait) and (min-width:768px){.journey-nav{flex-direction:column;gap:2px;white-space:normal;font-size:clamp(7px,2.2vw,9px)}.journey-nav span{width:26px;height:26px}}
 #stickBase,#stickRightBase{border:2px solid #81d5f4!important;background:linear-gradient(#1674a9bb,#06426fbb)!important;box-shadow:inset 0 2px 8px #bcecff88,0 4px 0 #07385f!important}
 #stick,#stickRight{background:linear-gradient(#e8faff,#84ceec)!important;border:1px solid #d6f5ff!important;box-shadow:0 3px 0 #226f9a!important}
+#stickRightBase.action-btn{border:2px solid #81d5f4!important;background:linear-gradient(#1674a9bb,#06426fbb)!important;box-shadow:inset 0 2px 8px #bcecff88,0 4px 0 #07385f!important;color:#fff}
+#stickRightBase.action-btn:active{transform:translateY(3px)!important;box-shadow:inset 0 2px 8px #bcecff88,0 1px 0 #07385f!important}
+#stickRightBase .action-icon{width:42px;height:42px;color:#fff;filter:drop-shadow(0 2px 3px #102c4677)}
 #playerSpeech .speech-bubble,#characterSpeech .speech-bubble,#characterSpeech .story-quote,#playerSpeech .story-choice{border-color:#60b5df!important;background:#e4f6ff!important;box-shadow:0 3px 0 #4a9ac4!important}
 #learningScroll{border-color:#56b7e1!important;box-shadow:0 5px 0 #0b598a,0 10px 24px #032d4f55!important}
 /* A rota mostra uma janela de três fases; os nomes continuam acessíveis aos leitores de tela. */
