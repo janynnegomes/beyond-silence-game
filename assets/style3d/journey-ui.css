@@ -256,18 +256,6 @@
 #learningScroll.is-summary #discoveryRewards:has(.reward-card .discovery-card.is-flipped) .reward-card{position:absolute;left:8%;top:50%;height:100%;width:auto;aspect-ratio:2/3;max-width:40%;transform:translateY(-50%)}
 #learningScroll.is-summary #discoveryRewards:has(.reward-card .discovery-card.is-flipped) .gift-box{left:auto;right:8%;width:28%}
 #learningScroll.is-summary #discoveryRewards:has(.reward-card .discovery-card.is-flipped) .discovery-lesson{font-size:clamp(11px,1.6vw,16px)}
-/* A tela de medalhas compartilha o cabeçalho, o painel e a moldura das coleções. */
-.medal-collection .medal-chest{width:clamp(44px,7vh,58px);height:clamp(40px,7vh,54px);max-height:none;object-fit:contain;margin:0}
-.medal-collection .discovery-grid{align-items:stretch}
-.medal-collection .medal-slot{height:clamp(82px,18vh,136px);min-height:0}
-.medal-collection .medal-slot[hidden]{display:none!important}
-.medal-collection .medal-slot.earned{animation:none}
-.medal-collection .medal-slot.locked strong{display:none}
-.medal-collection .medal-slot.earned strong{color:#16486c!important}
-.medal-board-actions{display:flex;justify-content:center;gap:clamp(8px,2vw,18px);padding-top:clamp(8px,1.5vh,14px)}
-.medal-board-actions ads-action-button{flex:1;max-width:280px}
-.medal-arriving{visibility:hidden}.medal-flight{margin:0;box-sizing:border-box}
-@media(max-height:420px){.medal-collection .medal-chest{width:38px;height:34px}.medal-collection .medal-slot{height:clamp(70px,18vh,96px)}}
 /* A coleção no modal mantém a mesma apresentação da jornada. */
 #modal.collection-modal{align-items:center}
 #modal.collection-modal #modalCard.collection-modal-card{width:min(78vw,950px);max-width:950px;max-height:calc(100% - 12px);padding:0;border:0!important;background:transparent!important;box-shadow:none!important;overflow:visible}

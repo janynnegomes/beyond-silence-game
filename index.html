@@ -275,7 +275,6 @@ h1,h2,p{margin-top:0}h1{font-size:30px;line-height:1.05;margin-bottom:10px}h2{fo
 #dialogueCard.character-bubble .story-quote{position:relative;display:block;width:fit-content;max-width:92%;margin:8px 0 10px;padding:8px 11px;background:#e7f6fc;color:#183c57;border:2px solid #8bc8d7;border-radius:12px 12px 12px 4px;box-shadow:0 3px 0 #c3e3eb}
 #dialogueCard.character-bubble .story-quote:after{content:"";position:absolute;left:12px;bottom:-7px;width:10px;height:10px;background:#e7f6fc;border-right:2px solid #8bc8d7;border-bottom:2px solid #8bc8d7;transform:rotate(45deg)}
 #dialogueCard.character-bubble .story-quote p{font-size:13px;line-height:1.32;color:#183c57}
-#dialogueCard.character-bubble .dialogue-exchange{display:flex;flex-direction:column;gap:6px;margin:8px 0 10px}
 #dialogueCard.character-bubble .speech-bubble{position:relative;width:fit-content;max-width:91%;padding:7px 10px;border:2px solid #82b8ca;border-radius:12px 12px 12px 4px;background:#e7f6fc;color:#183c57;box-shadow:0 3px 0 #c3e3eb}
 #dialogueCard.character-bubble .speech-bubble.player{align-self:flex-end;border-color:#5591ca;border-radius:12px 12px 4px 12px;background:#e8f0ff;box-shadow:0 3px 0 #c2d5ed}
 #dialogueCard.character-bubble .speech-bubble span{display:block;margin-bottom:2px;color:#34734d;font-size:9px;font-weight:1000;text-transform:uppercase;letter-spacing:.04em}
@@ -408,7 +407,6 @@ h1,h2,p{margin-top:0}h1{font-size:30px;line-height:1.05;margin-bottom:10px}h2{fo
 <script>
 {const query=matchMedia('(orientation: portrait) and (max-width: 767px)'),app=document.getElementById('app'),loading=document.getElementById('loadingScreen');function updateOrientation(){document.documentElement.classList.toggle('forced-landscape',query.matches);app.inert=!loading.hidden}query.addEventListener('change',updateOrientation);document.addEventListener('game-ready',updateOrientation);updateOrientation()}
 </script>
-<script src="components.js"></script>
 <script src="bundle.js"></script>
 </body>
 </html>
