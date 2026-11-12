@@ -401,10 +401,9 @@ h1,h2,p{margin-top:0}h1{font-size:30px;line-height:1.05;margin-bottom:10px}h2{fo
  <button id="stickRightBase" class="action-btn action-btn-jump" type="button" aria-label="Pular"><svg viewBox="0 0 48 48" class="action-icon" aria-hidden="true"><path d="M24 10 L38 24 H29 V38 H19 V24 H10 Z" fill="currentColor"/></svg><span class="stick-label">PULAR</span></button>
  <div id="lookLabel"></div>
 </div>
-<div id="dialogue" aria-live="polite"><div class="dialog-card" id="dialogueCard"></div></div>
-<div id="playerSpeech" aria-live="polite" aria-label="Fala do jogador"></div><div id="characterSpeech" aria-live="polite" aria-label="Fala do personagem"></div>
-<aside id="learningScroll" aria-label="Dicas e explicações da conversa" aria-live="polite"><div class="learning-scroll-title" tabindex="-1">📜 DICAS E CONTEXTO</div><div id="discoveryRewards" hidden></div><div id="learningScrollContent"></div><div id="learningScrollActions"></div></aside>
-<ads-modal-surface id="modal"><div class="modal-card" id="modalCard"></div></ads-modal-surface>
+<!-- #dialogue, #playerSpeech, #characterSpeech e #learningScroll são
+     renderizados pelo React (src/ui/dialogue/) dentro de #ui-root. -->
+<!-- #modal é renderizado pelo React (ModalHost, portal para #app). -->
 </div>
 <script>
 {const query=matchMedia('(orientation: portrait) and (max-width: 767px)'),app=document.getElementById('app'),loading=document.getElementById('loadingScreen');function updateOrientation(){document.documentElement.classList.toggle('forced-landscape',query.matches);app.inert=!loading.hidden}query.addEventListener('change',updateOrientation);document.addEventListener('game-ready',updateOrientation);updateOrientation()}
