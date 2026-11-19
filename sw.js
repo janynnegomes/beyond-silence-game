@@ -1,4 +1,4 @@
-const CACHE_NAME = "alem-do-silencio-4e475a572efe2164";
+const CACHE_NAME = "alem-do-silencio-824ae8fc6ee9192c";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -13,6 +13,7 @@ const APP_SHELL = [
   "./assets/lucas.svg",
   "./assets/style3d/background-acolhimento.webp",
   "./assets/style3d/background-biblioteca.webp",
+  "./assets/style3d/background-corredor-profundidade.webp",
   "./assets/style3d/background-corredor.webp",
   "./assets/style3d/background-jardim.webp",
   "./assets/style3d/background-quadra.webp",
@@ -44,6 +45,9 @@ const APP_SHELL = [
   "./assets/style3d/emotion-teacher-standing-happy.png",
   "./assets/style3d/emotion-teacher-standing-sad.png",
   "./assets/style3d/emotion-teacher-standing-shy.png",
+  "./assets/style3d/floor-stone-body.png",
+  "./assets/style3d/floor-stone-top.png",
+  "./assets/style3d/floor-stone.png",
   "./assets/style3d/frames.json",
   "./assets/style3d/icones-descobertas.png",
   "./assets/style3d/jornada-quadra.png",
@@ -78,11 +82,13 @@ const APP_SHELL = [
   "./assets/style3d/naila/tile007.png",
   "./assets/style3d/obstacle-backpack.png",
   "./assets/style3d/obstacle-ball.png",
+  "./assets/style3d/obstacle-barreira.png",
   "./assets/style3d/obstacle-basket.png",
   "./assets/style3d/obstacle-bench.png",
   "./assets/style3d/obstacle-books.png",
   "./assets/style3d/obstacle-cone.png",
   "./assets/style3d/obstacle-cushion.png",
+  "./assets/style3d/obstacle-cyberalert.png",
   "./assets/style3d/obstacle-footstool.png",
   "./assets/style3d/obstacle-log.png",
   "./assets/style3d/obstacle-mat.png",
@@ -92,10 +98,17 @@ const APP_SHELL = [
   "./assets/style3d/obstacle-returnsbox.png",
   "./assets/style3d/obstacle-rock.png",
   "./assets/style3d/obstacle-supplybox.png",
+  "./assets/style3d/obstacle-thoughtcloud.png",
   "./assets/style3d/obstacle-traycart.png",
   "./assets/style3d/obstacle-wetfloor.png",
+  "./assets/style3d/obstaculos/obstacle-barreira.png",
+  "./assets/style3d/obstaculos/obstacle-cyberalert-new.png",
+  "./assets/style3d/obstaculos/obstacle-cyberalert.jpg",
+  "./assets/style3d/obstaculos/obstacle-thoughtcloud.png",
+  "./assets/style3d/obstaculos/zone-isolamento-reference.jpg",
   "./assets/style3d/pedestal-acolhimento.png",
   "./assets/style3d/pedestal-biblioteca.png",
+  "./assets/style3d/pedestal-corredor-profundidade.png",
   "./assets/style3d/pedestal-corredor.png",
   "./assets/style3d/pedestal-jardim.png",
   "./assets/style3d/pedestal-quadra.png",
@@ -131,7 +144,8 @@ const APP_SHELL = [
   "./assets/style3d/speech-teacher-standing-sad.png",
   "./assets/style3d/speech-teacher-standing-shy.png",
   "./assets/style3d/story-lucas.png",
-  "./assets/style3d/style.css"
+  "./assets/style3d/style.css",
+  "./assets/style3d/zone-isolamento.png"
 ];
 
 self.addEventListener("install", event => {
