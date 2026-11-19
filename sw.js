@@ -1,4 +1,4 @@
-const CACHE_NAME = "alem-do-silencio-824ae8fc6ee9192c";
+const CACHE_NAME = "alem-do-silencio-5e7315be5a2fdc8b";
 const APP_SHELL = [
   "./",
   "./index.html",

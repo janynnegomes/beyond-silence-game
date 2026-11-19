@@ -49,7 +49,7 @@ h1,h2,p{margin-top:0}h1{font-size:30px;line-height:1.05;margin-bottom:10px}h2{fo
 .secondary{background:#eaf5fb;border:1px solid #b5d0e0;border-radius:14px;padding:12px 14px;width:100%;font-size:13px;color:#214a66}
 .row{display:flex;gap:9px}.row>*{flex:1}
 .small{font-size:11px;color:#5c7890;line-height:1.45}
-#toast{position:absolute;z-index:5;left:16px;right:16px;bottom:165px;background:#f5fbfff2;color:#1e4964;border:2px solid #ffffff;border-radius:16px;padding:12px 14px;font-size:12px;line-height:1.45;display:none;box-shadow:0 5px 16px #123c5b44}
+#toast{position:absolute;z-index:5;left:16px;right:auto;max-width:min(340px,calc(100% - 32px));bottom:165px;background:#0d2238db;color:#f0f8ff;border:1.5px solid #2d557caa;border-radius:14px;padding:10px 14px;font-size:12px;font-weight:600;line-height:1.45;display:none;box-shadow:0 8px 24px #00122488;backdrop-filter:blur(8px);pointer-events:none}
 /* Medalha conquistada (EarnedMedal): voo/bounce via WAAPI no .earned-medal-flight;
    flutuação infinita via CSS, iniciada ~2,1s após a montagem (atraso de
    decolagem + voo + pouso). .is-static desliga a flutuação (reduced motion). */
